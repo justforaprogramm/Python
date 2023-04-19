@@ -1,8 +1,11 @@
 """
 docs.python.org/3/libary/functions.html
 
-print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 Str = String
+int = Integer
+
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
 .title() = Uppercase all letters after Space
 .capitelize() = Uppercase the first letters after Space
 """ 
