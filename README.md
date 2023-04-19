@@ -1,4 +1,4 @@
-# Learning
-try to learn git and more
+# Python
+try to learn python
 
-In this Reposetory i try to learn git and other languagues.
+In this Reposetory i try to learn python!
