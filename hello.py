@@ -7,7 +7,7 @@ int = Integer
 print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 
 .title() = Uppercase all letters after Space
-.capitelize() = Uppercase the first letters after Space
+.capitalize() = Uppercase the first letters after Space
 """ 
 
 # Ask User For name and save value + Remove blank
