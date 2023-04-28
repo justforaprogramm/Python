@@ -57,10 +57,10 @@ class App(tk.Frame):
             self.merged_dataframe.to_csv(filepath, index=False)
         elif self.format_var.get() == "xlsx":
             self.merged_dataframe.to_excel(filepath, index=False)
-
-# Create Tkinter app
+            
 root = tk.Tk()
 app = App(master=root)
 
-# Start app
+
 app.mainloop()
+
