@@ -20,4 +20,4 @@ for i in range(len(students)):
     print(i + 1, students[i])
 # now better v2
 for i, student in enumerate(students):
-    print(i + 1, students[i])
+    print(i + 1, student)
