@@ -9,7 +9,7 @@ students = ["Hermoine", "Harry", "Ron"]
 #gryffindors = [{"name": student, "house": "Gryffindor"} for student in students]
 
 #       v3      #
-gryffindors = {student: "Gryffindor" for student in students}
+#gryffindors = {student: "Gryffindor" for student in students}
 
 
 #print for !# and #
