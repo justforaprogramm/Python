@@ -13,6 +13,7 @@ while run:
     
     screen.fill((255, 255, 255))
     
+    # makes the square
     pygame.draw.rect(screen, (255, 0, 0), (200, 100, 150, 150), width = 5, border_bottom_left_radius = 25)
     
     for event in pygame.event.get():
