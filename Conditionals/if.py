@@ -1,3 +1,5 @@
+""" if, else, elif without switch
+"""
 score = int(input("score: "))
 
 if score >= 90:

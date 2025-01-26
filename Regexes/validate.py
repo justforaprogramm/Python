@@ -24,9 +24,11 @@
    r regular expresion
 """
 import re
-email = input("What's your email? ").strip()
+#email = input("What's your email? ").strip()
+str = "54-222"
 
-if re.search(r"^(\w|\.)+@(\w+\.)?\w+\.com$", email, re.IGNORECASE):
+if re.search(r"^\d{2}-\d{3}$", str):
     print("Valid")
 else:
-    print("Invalid") 
+    print("Invalid")
+ 
