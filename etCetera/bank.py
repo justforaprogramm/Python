@@ -33,7 +33,7 @@ class Account:
 
 def main():
     account = Account()
-    print("Balance", account.balance)
+    print("Balance:", account.balance)
     account.deposit(100)
     account.withdraw(50)
     print("Balance:", account.balance)
