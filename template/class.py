@@ -31,6 +31,8 @@ class person():
     
     @address.setter
     def address(self, address):
+        if not address:
+            raise ValueError("Missing address")
         self._address = address
 
 def main() -> None:
