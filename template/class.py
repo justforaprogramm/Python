@@ -28,7 +28,7 @@ class person():
     @property
     def address(self):
         return self._address
-    
+
     @address.setter
     def address(self, address):
         if not address:
@@ -44,4 +44,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-    
