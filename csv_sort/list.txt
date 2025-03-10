@@ -1,0 +1,8 @@
+Annett Schäfer: basis_deutsch
+Torsten Wechsler: basis_deutsch
+Katrin Gersten: basis_deutsch, basis_geo
+Birgit Diederich: basis_deutsch, basis_geo, basis_mathe
+Stephan Himmel: basis_geo, basis_mathe
+Florian Kaestner: basis_geo
+Frank Kluge: basis_mathe
+Gabriele Kaestner: basis_mathe
