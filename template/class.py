@@ -1,16 +1,19 @@
+from email.headerregistry import Address
+
+
 class person():
-    def __init__(self, name, adress):
+    def __init__(self, name, address):
         self.name = name
-        self.adress = adress
+        self.address = address
     
     def __str__(self):
-        return f"{self.name} from {self.house}"
+        return f"{self.name} from {self.address}"
     
     @classmethod
     def get(cls):
         name = input("Name: ")
-        house = input("House: ")
-        return cls(name, house)
+        address = input("address: ")
+        return cls(name, address)
     
     @property
     def name(self):
@@ -23,12 +26,14 @@ class person():
         self._name = name
         
     @property
-    def adress(self):
-        return self._adress
-    
-    @adress.setter
-    def house(self, house):
-        self._adress = adress
+    def address(self):
+        return self._address
+
+    @address.setter
+    def address(self, address):
+        if not address:
+            raise ValueError("Missing address")
+        self._address = address
 
 def main() -> None:
     """call class
