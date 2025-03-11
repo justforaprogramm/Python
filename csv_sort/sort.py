@@ -1,6 +1,7 @@
 from pathlib import Path
 from csv import reader
 
+# with 200 files, 8000 students and 2000 students per file, programm needs (real:0,65s; user:0,625s ;sys:0,024s)
 class StudentListManager:
     def __init__(self) -> None:
         """Initialize the manager with the file paths and an empty student dictionary."""
