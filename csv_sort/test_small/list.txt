@@ -1,0 +1,102 @@
+Schueler: Physik_lk, Philosophie_basis, Politik_lk, Religion_basis, Deutsch_lk, Geschichte_basis, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Englisch_lk, Englisch_basis, Physik_basis, Philosophie_lk, Biologie_lk, Chemie_basis, Musik_lk, Sport_basis, Kunst_lk, Deutsch_basis, Politik_basis, Mathe_basis, Sport_lk, Mathe_lk, Informatik_basis, Chemie_lk, Musik_basis, Biologie_basis, Religion_lk, Geschichte_lk
+Pius Becker-Krebs: Physik_lk, Religion_basis, Deutsch_lk, Informatik_lk, Erdkunde_lk, Physik_basis, Physik_basis, Chemie_basis, Musik_lk, Musik_lk, Sport_lk, Musik_basis
+Meinolf Hermann: Physik_lk, Politik_lk, Religion_basis, Deutsch_lk, Englisch_lk, Physik_basis, Physik_basis, Biologie_lk, Chemie_basis, Musik_lk, Biologie_basis, Religion_lk
+Herr Siegfried Fliegner B.Sc.: Physik_lk, Politik_lk, Deutsch_lk, Geschichte_basis, Erdkunde_basis, Kunst_basis, Physik_basis, Philosophie_lk, Musik_lk, Kunst_lk, Politik_basis, Religion_lk, Geschichte_lk
+Eva Weller: Physik_lk, Erdkunde_basis, Informatik_lk, Kunst_basis, Englisch_basis, Physik_basis, Biologie_lk, Deutsch_basis, Politik_basis, Sport_lk, Informatik_basis, Chemie_lk, Religion_lk, Geschichte_lk
+Slobodan Patberg Mba.: Physik_lk, Religion_basis, Deutsch_lk, Geschichte_basis, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Englisch_lk, Physik_basis, Musik_lk, Sport_basis, Kunst_lk, Mathe_lk, Informatik_basis, Religion_lk
+Arndt Eigenwillig B.Sc.: Physik_lk, Philosophie_basis, Religion_basis, Erdkunde_basis, Erdkunde_lk, Englisch_lk, Physik_basis, Philosophie_lk, Musik_lk, Politik_basis, Mathe_lk, Informatik_basis, Biologie_basis
+Elmar Junk: Physik_lk, Politik_lk, Religion_basis, Geschichte_basis, Informatik_lk, Kunst_basis, Englisch_lk, Physik_basis, Chemie_basis, Kunst_lk, Deutsch_basis, Mathe_basis, Mathe_lk, Musik_basis
+Hans-Michael Hesse: Physik_lk, Geschichte_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Englisch_lk, Englisch_basis, Physik_basis, Philosophie_lk, Chemie_basis, Sport_basis, Deutsch_basis, Politik_basis, Informatik_basis, Musik_basis, Biologie_basis
+Willfried Mosemann: Physik_lk, Informatik_lk, Kunst_basis, Englisch_basis, Physik_basis, Chemie_basis, Sport_basis, Deutsch_basis, Politik_basis, Mathe_basis, Mathe_lk, Informatik_basis, Geschichte_lk
+Darko Radisch: Physik_lk, Politik_lk, Religion_basis, Deutsch_lk, Geschichte_basis, Informatik_lk, Englisch_lk, Englisch_basis, Philosophie_lk, Chemie_basis, Mathe_lk, Informatik_basis, Musik_basis, Biologie_basis, Religion_lk, Geschichte_lk
+Herr Zdravko Scholz B.A.: Physik_lk, Deutsch_lk, Informatik_lk, Erdkunde_lk, Englisch_basis, Philosophie_lk, Biologie_lk, Musik_lk, Sport_basis, Mathe_basis, Chemie_lk, Musik_basis, Biologie_basis
+Gerlinde Söding: Physik_lk, Politik_lk, Religion_basis, Erdkunde_basis, Informatik_lk, Kunst_basis, Englisch_basis, Physik_basis, Philosophie_lk, Biologie_lk, Musik_lk, Kunst_lk, Mathe_basis, Sport_lk, Mathe_lk, Musik_basis, Geschichte_lk
+Nikolai Gnatz-Bien: Physik_lk, Philosophie_basis, Politik_lk, Religion_basis, Deutsch_lk, Kunst_basis, Englisch_basis, Philosophie_lk, Biologie_lk, Sport_basis, Deutsch_basis, Mathe_basis, Mathe_lk, Chemie_lk, Musik_basis, Religion_lk, Geschichte_lk
+Sylwia Juncken Mba.: Physik_lk, Philosophie_basis, Politik_lk, Informatik_lk, Erdkunde_lk, Kunst_basis, Physik_basis, Chemie_basis, Deutsch_basis, Mathe_lk, Biologie_basis, Religion_lk
+Willi Tschentscher: Physik_lk, Philosophie_basis, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Englisch_lk, Englisch_basis, Physik_basis, Biologie_lk, Musik_lk, Politik_basis, Mathe_basis, Informatik_basis, Chemie_lk, Biologie_basis
+John Jähn: Physik_lk, Religion_basis, Deutsch_lk, Geschichte_basis, Erdkunde_basis, Kunst_basis, Englisch_lk, Physik_basis, Deutsch_basis, Sport_lk, Musik_basis, Biologie_basis
+Philippe Kabus-Scheuermann: Physik_lk, Religion_basis, Informatik_lk, Kunst_basis, Englisch_lk, Philosophie_lk, Deutsch_basis, Mathe_basis, Sport_lk, Chemie_lk, Religion_lk, Geschichte_lk
+Metin Jäkel: Physik_lk, Philosophie_basis, Politik_lk, Deutsch_lk, Deutsch_lk, Erdkunde_lk, Kunst_basis, Englisch_lk, Biologie_lk, Politik_basis, Mathe_lk, Musik_basis
+Rainer Heser: Physik_lk, Philosophie_basis, Deutsch_lk, Erdkunde_basis, Erdkunde_lk, Kunst_basis, Englisch_lk, Englisch_basis, Philosophie_lk, Biologie_lk, Musik_lk, Deutsch_basis, Politik_basis, Mathe_basis, Mathe_lk, Religion_lk, Geschichte_lk
+Ole Niemeier: Physik_lk, Philosophie_basis, Religion_basis, Informatik_lk, Kunst_basis, Englisch_lk, Englisch_basis, Physik_basis, Musik_lk, Chemie_lk, Musik_basis, Religion_lk
+Romuald Birnbaum: Physik_lk, Philosophie_basis, Politik_lk, Religion_basis, Erdkunde_basis, Englisch_lk, Englisch_basis, Physik_basis, Philosophie_lk, Biologie_lk, Politik_basis, Mathe_basis, Sport_lk, Chemie_lk, Musik_basis, Religion_lk
+Tobias Hesse: Physik_lk, Philosophie_basis, Geschichte_basis, Erdkunde_basis, Erdkunde_lk, Englisch_basis, Physik_basis, Philosophie_lk, Chemie_basis, Musik_lk, Deutsch_basis, Sport_lk, Mathe_lk, Biologie_basis
+Svea Schüler B.Sc.: Physik_lk, Politik_lk, Physik_basis, Philosophie_lk, Biologie_lk, Chemie_basis, Musik_lk, Kunst_lk, Deutsch_basis, Mathe_basis, Sport_lk, Informatik_basis, Musik_basis
+Bruni Meister B.Sc.: Physik_lk, Englisch_lk, Englisch_basis, Physik_basis, Biologie_lk, Chemie_basis, Sport_basis, Politik_basis, Sport_lk, Mathe_lk, Musik_basis, Religion_lk
+Dr. Ayse Stadelmann B.Sc.: Physik_lk, Philosophie_basis, Deutsch_lk, Geschichte_basis, Englisch_basis, Philosophie_lk, Musik_lk, Sport_basis, Deutsch_basis, Informatik_basis, Chemie_lk, Biologie_basis, Religion_lk, Geschichte_lk
+Frau Doris Mälzer: Physik_lk, Politik_lk, Religion_basis, Erdkunde_basis, Englisch_lk, Musik_lk, Mathe_basis, Informatik_basis, Chemie_lk, Musik_basis, Biologie_basis, Religion_lk
+Hella Jäkel: Physik_lk, Philosophie_basis, Deutsch_lk, Kunst_basis, Physik_basis, Philosophie_lk, Sport_basis, Deutsch_basis, Mathe_basis, Mathe_lk, Informatik_basis, Musik_basis
+Anne Birnbaum: Physik_lk, Philosophie_basis, Politik_lk, Religion_basis, Informatik_lk, Erdkunde_lk, Englisch_basis, Philosophie_lk, Deutsch_basis, Politik_basis, Informatik_basis, Biologie_basis, Geschichte_lk
+Fernando Geißler: Physik_lk, Politik_lk, Religion_basis, Deutsch_lk, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Englisch_lk, Englisch_basis, Philosophie_lk, Biologie_lk, Deutsch_basis, Informatik_basis, Chemie_lk, Musik_basis, Religion_lk
+Alban Finke B.Eng.: Physik_lk, Geschichte_basis, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Biologie_lk, Politik_basis, Mathe_basis, Sport_lk, Musik_basis, Geschichte_lk
+Ann Eimer: Physik_lk, Politik_lk, Deutsch_lk, Geschichte_basis, Erdkunde_basis, Erdkunde_lk, Kunst_basis, Englisch_lk, Englisch_basis, Physik_basis, Philosophie_lk, Musik_lk, Mathe_basis, Mathe_lk, Chemie_lk, Religion_lk
+Hermine Hänel: Physik_lk, Politik_lk, Deutsch_lk, Geschichte_basis, Informatik_lk, Kunst_basis, Englisch_basis, Physik_basis, Philosophie_lk, Musik_lk, Sport_basis, Sport_lk, Mathe_lk, Informatik_basis, Biologie_basis, Religion_lk
+Manuel Mielcarek-Eberhardt: Physik_lk, Physik_lk, Geschichte_basis, Informatik_lk, Erdkunde_lk, Physik_basis, Philosophie_lk, Chemie_basis, Musik_lk, Sport_basis, Mathe_basis, Musik_basis
+Concetta Gnatz B.A.: Physik_lk, Politik_lk, Religion_basis, Kunst_basis, Englisch_lk, Englisch_basis, Physik_basis, Philosophie_lk, Deutsch_basis, Sport_lk, Chemie_lk, Geschichte_lk
+Leila Hövel: Physik_lk, Religion_basis, Deutsch_lk, Kunst_basis, Biologie_lk, Chemie_basis, Musik_lk, Mathe_lk, Chemie_lk, Biologie_basis, Religion_lk, Geschichte_lk
+Ellen Ruppert: Physik_lk, Philosophie_basis, Deutsch_lk, Informatik_lk, Englisch_lk, Musik_lk, Sport_basis, Deutsch_basis, Politik_basis, Mathe_basis, Sport_lk, Mathe_lk, Chemie_lk, Musik_basis, Religion_lk, Geschichte_lk
+Oskar Ebert B.Eng.: Physik_lk, Philosophie_basis, Politik_lk, Religion_basis, Geschichte_basis, Englisch_basis, Musik_lk, Deutsch_basis, Politik_basis, Mathe_basis, Biologie_basis, Religion_lk, Geschichte_lk
+Steffen Bolzmann: Physik_lk, Philosophie_basis, Politik_lk, Informatik_lk, Englisch_basis, Physik_basis, Musik_lk, Sport_lk, Mathe_lk, Informatik_basis, Musik_basis, Biologie_basis
+Sigurd Dörschner-Kühnert: Physik_lk, Religion_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Englisch_lk, Philosophie_lk, Sport_basis, Mathe_basis, Informatik_basis, Chemie_lk, Religion_lk
+Pius Davids: Physik_lk, Deutsch_lk, Erdkunde_basis, Erdkunde_lk, Kunst_basis, Englisch_lk, Englisch_basis, Biologie_lk, Musik_lk, Kunst_lk, Politik_basis, Mathe_basis, Mathe_lk, Informatik_basis, Musik_basis
+Brit Wieloch-Kuhl: Physik_lk, Philosophie_basis, Geschichte_basis, Kunst_basis, Physik_basis, Chemie_basis, Musik_lk, Kunst_lk, Politik_basis, Mathe_basis, Sport_lk, Religion_lk
+Lieselotte Hiller B.A.: Physik_lk, Deutsch_lk, Englisch_lk, Englisch_basis, Physik_basis, Chemie_basis, Musik_lk, Deutsch_basis, Politik_basis, Mathe_basis, Sport_lk, Biologie_basis, Religion_lk
+Arnold Mangold: Physik_lk, Physik_lk, Philosophie_basis, Politik_lk, Erdkunde_basis, Informatik_lk, Kunst_basis, Englisch_lk, Politik_basis, Sport_lk, Musik_basis, Religion_lk
+Frau Edeltraut Kranz: Physik_lk, Politik_lk, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Chemie_basis, Mathe_lk, Chemie_lk, Musik_basis, Religion_lk, Religion_lk
+Annekatrin Köster: Physik_lk, Erdkunde_lk, Englisch_lk, Englisch_basis, Philosophie_lk, Philosophie_lk, Biologie_lk, Musik_lk, Kunst_lk, Politik_basis, Mathe_basis, Chemie_lk
+Nadja Wilmsen: Physik_lk, Erdkunde_basis, Englisch_lk, Englisch_basis, Kunst_lk, Politik_basis, Sport_lk, Mathe_lk, Informatik_basis, Musik_basis, Religion_lk, Geschichte_lk
+Kai-Uwe Kitzmann: Philosophie_basis, Politik_lk, Religion_basis, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Physik_basis, Biologie_lk, Chemie_basis, Musik_lk, Deutsch_basis, Politik_basis, Sport_lk, Mathe_lk, Musik_basis, Biologie_basis
+Dr. Helen Dietz Mba.: Philosophie_basis, Erdkunde_basis, Informatik_lk, Kunst_basis, Englisch_lk, Englisch_basis, Philosophie_lk, Musik_lk, Kunst_lk, Politik_basis, Mathe_basis, Sport_lk, Informatik_basis, Chemie_lk, Religion_lk
+Armin Kühnert: Philosophie_basis, Religion_basis, Erdkunde_basis, Erdkunde_lk, Englisch_basis, Physik_basis, Kunst_lk, Politik_basis, Mathe_basis, Mathe_lk, Chemie_lk, Musik_basis, Geschichte_lk
+Prof. Kordula Roskoth B.Eng.: Philosophie_basis, Politik_lk, Religion_basis, Deutsch_lk, Geschichte_basis, Kunst_basis, Sport_basis, Kunst_lk, Politik_basis, Sport_lk, Mathe_lk, Musik_basis, Religion_lk
+Bruno Kusch B.A.: Philosophie_basis, Politik_lk, Geschichte_basis, Informatik_lk, Erdkunde_lk, Biologie_lk, Chemie_basis, Musik_lk, Sport_basis, Kunst_lk, Sport_lk, Chemie_lk, Geschichte_lk
+Johanna Margraf: Philosophie_basis, Religion_basis, Informatik_lk, Kunst_basis, Physik_basis, Philosophie_lk, Biologie_lk, Deutsch_basis, Mathe_basis, Informatik_basis, Musik_basis, Religion_lk
+Peter-Michael Dippel: Philosophie_basis, Politik_lk, Geschichte_basis, Erdkunde_basis, Erdkunde_lk, Kunst_basis, Philosophie_lk, Sport_basis, Mathe_basis, Sport_lk, Chemie_lk, Biologie_basis, Geschichte_lk
+Antje Kabus B.Sc.: Philosophie_basis, Politik_lk, Religion_basis, Geschichte_basis, Erdkunde_basis, Erdkunde_lk, Kunst_basis, Englisch_lk, Chemie_basis, Kunst_lk, Sport_lk, Informatik_basis, Musik_basis, Religion_lk
+Rolf-Dieter Jungfer: Philosophie_basis, Deutsch_lk, Geschichte_basis, Erdkunde_basis, Informatik_lk, Englisch_basis, Philosophie_lk, Biologie_lk, Chemie_basis, Sport_basis, Kunst_lk, Deutsch_basis, Mathe_basis
+Grete Carsten: Philosophie_basis, Deutsch_lk, Erdkunde_basis, Erdkunde_lk, Kunst_basis, Englisch_lk, Deutsch_basis, Politik_basis, Mathe_lk, Musik_basis, Biologie_basis, Religion_lk
+Darius Bloch: Philosophie_basis, Politik_lk, Religion_basis, Deutsch_lk, Geschichte_basis, Geschichte_basis, Erdkunde_lk, Physik_basis, Sport_basis, Politik_basis, Biologie_basis, Religion_lk
+Ute Sager: Philosophie_basis, Politik_lk, Religion_basis, Geschichte_basis, Erdkunde_basis, Kunst_basis, Physik_basis, Philosophie_lk, Biologie_lk, Deutsch_basis, Musik_basis, Biologie_basis, Religion_lk
+Maritta Gutknecht Mba.: Philosophie_basis, Politik_lk, Religion_basis, Deutsch_lk, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Philosophie_lk, Chemie_basis, Sport_basis, Kunst_lk, Deutsch_basis, Politik_basis, Biologie_basis
+Burghard Ruppert: Philosophie_basis, Politik_lk, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Englisch_lk, Philosophie_lk, Biologie_lk, Sport_basis, Deutsch_basis, Musik_basis, Geschichte_lk
+Gabriele Nerger-Tröst: Philosophie_basis, Erdkunde_lk, Englisch_lk, Englisch_basis, Physik_basis, Philosophie_lk, Biologie_lk, Chemie_basis, Sport_basis, Sport_lk, Chemie_lk, Musik_basis
+Aenne Scholz: Philosophie_basis, Deutsch_lk, Informatik_lk, Erdkunde_lk, Kunst_basis, Kunst_basis, Physik_basis, Philosophie_lk, Biologie_lk, Deutsch_basis, Mathe_lk, Religion_lk
+Ing. Lili Birnbaum: Philosophie_basis, Deutsch_lk, Erdkunde_basis, Erdkunde_lk, Englisch_lk, Englisch_lk, Chemie_basis, Musik_lk, Sport_basis, Deutsch_basis, Mathe_basis, Sport_lk
+Pedro Tintzmann: Philosophie_basis, Politik_lk, Religion_basis, Englisch_lk, Englisch_basis, Philosophie_lk, Biologie_lk, Musik_lk, Sport_basis, Kunst_lk, Informatik_basis, Biologie_basis
+Kenneth Roskoth-Römer: Philosophie_basis, Deutsch_lk, Geschichte_basis, Kunst_basis, Physik_basis, Philosophie_lk, Sport_basis, Kunst_lk, Deutsch_basis, Politik_basis, Mathe_basis, Informatik_basis, Musik_basis, Religion_lk
+Adolf Conradi: Philosophie_basis, Politik_lk, Geschichte_basis, Kunst_basis, Physik_basis, Biologie_lk, Kunst_lk, Mathe_basis, Sport_lk, Mathe_lk, Musik_basis, Biologie_basis
+Ute Mans: Philosophie_basis, Politik_lk, Religion_basis, Religion_basis, Informatik_lk, Englisch_lk, Englisch_basis, Musik_lk, Mathe_basis, Chemie_lk, Musik_basis, Religion_lk
+Waltrud Martin: Philosophie_basis, Geschichte_basis, Informatik_lk, Informatik_lk, Kunst_basis, Biologie_lk, Chemie_basis, Sport_basis, Mathe_basis, Sport_lk, Informatik_basis, Geschichte_lk
+Rüdiger Mohaupt: Politik_lk, Geschichte_basis, Erdkunde_basis, Englisch_lk, Englisch_basis, Biologie_lk, Musik_lk, Politik_basis, Mathe_basis, Informatik_basis, Religion_lk, Geschichte_lk
+Bernfried Gumprich: Politik_lk, Erdkunde_basis, Kunst_basis, Englisch_basis, Physik_basis, Biologie_lk, Musik_lk, Sport_basis, Kunst_lk, Sport_lk, Religion_lk, Geschichte_lk
+Univ.Prof. Tomasz Birnbaum: Politik_lk, Religion_basis, Kunst_basis, Englisch_lk, Biologie_lk, Kunst_lk, Deutsch_basis, Sport_lk, Informatik_basis, Chemie_lk, Chemie_lk, Religion_lk
+Hansjürgen Bähr-Peukert: Politik_lk, Geschichte_basis, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Englisch_lk, Englisch_basis, Physik_basis, Chemie_basis, Kunst_lk, Sport_lk, Geschichte_lk
+Marie-Therese Kambs-Hesse: Politik_lk, Deutsch_lk, Informatik_lk, Erdkunde_lk, Englisch_lk, Philosophie_lk, Biologie_lk, Musik_lk, Deutsch_basis, Politik_basis, Mathe_lk, Musik_basis, Geschichte_lk
+Tibor Kreusel: Politik_lk, Religion_basis, Erdkunde_basis, Informatik_lk, Englisch_lk, Philosophie_lk, Politik_basis, Sport_lk, Chemie_lk, Musik_basis, Biologie_basis, Geschichte_lk
+Frau Benita Junck: Politik_lk, Informatik_lk, Kunst_basis, Englisch_lk, Englisch_basis, Physik_basis, Chemie_basis, Musik_lk, Sport_lk, Mathe_lk, Informatik_basis, Chemie_lk, Religion_lk
+James Fliegner: Politik_lk, Religion_basis, Erdkunde_lk, Englisch_lk, Physik_basis, Chemie_basis, Kunst_lk, Deutsch_basis, Mathe_basis, Sport_lk, Musik_basis, Biologie_basis, Religion_lk
+Raisa Haase-Hande: Politik_lk, Erdkunde_basis, Kunst_basis, Englisch_basis, Philosophie_lk, Biologie_lk, Chemie_basis, Musik_lk, Sport_basis, Sport_lk, Mathe_lk, Musik_basis, Geschichte_lk
+Kevin Kreusel: Politik_lk, Geschichte_basis, Erdkunde_basis, Informatik_lk, Kunst_basis, Physik_basis, Philosophie_lk, Chemie_basis, Musik_lk, Mathe_lk, Religion_lk, Geschichte_lk
+Dipl.-Ing. Rosmarie Loos Mba.: Politik_lk, Religion_basis, Informatik_lk, Informatik_lk, Erdkunde_lk, Englisch_basis, Englisch_basis, Biologie_lk, Politik_basis, Sport_lk, Informatik_basis, Informatik_basis
+Marina Fechner: Religion_basis, Geschichte_basis, Informatik_lk, Erdkunde_lk, Englisch_lk, Englisch_basis, Philosophie_lk, Biologie_lk, Chemie_basis, Sport_basis, Mathe_basis, Musik_basis, Religion_lk, Geschichte_lk
+Mirko Käster: Religion_basis, Englisch_lk, Physik_basis, Biologie_lk, Biologie_lk, Musik_lk, Musik_lk, Deutsch_basis, Politik_basis, Sport_lk, Mathe_lk, Geschichte_lk
+Uli Schönland: Religion_basis, Deutsch_lk, Geschichte_basis, Geschichte_basis, Informatik_lk, Englisch_basis, Biologie_lk, Chemie_basis, Sport_lk, Mathe_lk, Informatik_basis, Geschichte_lk
+Theodor Klotz: Religion_basis, Erdkunde_basis, Erdkunde_lk, Englisch_basis, Chemie_basis, Musik_lk, Kunst_lk, Informatik_basis, Informatik_basis, Musik_basis, Religion_lk, Geschichte_lk
+Canan Schulz-Faust: Religion_basis, Geschichte_basis, Erdkunde_basis, Erdkunde_lk, Kunst_basis, Philosophie_lk, Philosophie_lk, Musik_lk, Mathe_basis, Informatik_basis, Chemie_lk, Religion_lk
+Friedhilde Warmer: Religion_basis, Deutsch_lk, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Englisch_lk, Englisch_basis, Musik_lk, Kunst_lk, Informatik_basis, Musik_basis, Geschichte_lk
+Dr. Katharine Stiebitz: Religion_basis, Geschichte_basis, Informatik_lk, Englisch_basis, Physik_basis, Philosophie_lk, Biologie_lk, Politik_basis, Chemie_lk, Musik_basis, Biologie_basis, Geschichte_lk
+Dr. Fred Schuster B.Sc.: Religion_basis, Deutsch_lk, Geschichte_basis, Erdkunde_basis, Kunst_basis, Biologie_lk, Chemie_basis, Sport_basis, Deutsch_basis, Politik_basis, Informatik_basis, Biologie_basis
+Constantin Killer: Religion_basis, Deutsch_lk, Erdkunde_basis, Informatik_lk, Erdkunde_lk, Kunst_basis, Englisch_lk, Chemie_basis, Politik_basis, Mathe_basis, Chemie_lk, Religion_lk
+Katherina Römer: Religion_basis, Religion_basis, Erdkunde_basis, Informatik_lk, Chemie_basis, Politik_basis, Mathe_basis, Mathe_basis, Sport_lk, Musik_basis, Biologie_basis, Geschichte_lk
+Edda Drewes: Deutsch_lk, Deutsch_lk, Erdkunde_basis, Kunst_basis, Englisch_basis, Chemie_basis, Musik_lk, Politik_basis, Mathe_basis, Sport_lk, Mathe_lk, Musik_basis
+Prof. Burkhard Fechner: Deutsch_lk, Deutsch_lk, Erdkunde_basis, Kunst_basis, Philosophie_lk, Biologie_lk, Sport_basis, Kunst_lk, Kunst_lk, Mathe_basis, Chemie_lk, Religion_lk
+Ahmad Faust: Deutsch_lk, Informatik_lk, Englisch_lk, Physik_basis, Musik_lk, Kunst_lk, Deutsch_basis, Politik_basis, Sport_lk, Chemie_lk, Biologie_basis, Religion_lk
+Herr Mehdi Lübs Mba.: Deutsch_lk, Geschichte_basis, Erdkunde_basis, Englisch_lk, Physik_basis, Sport_basis, Deutsch_basis, Politik_basis, Sport_lk, Musik_basis, Biologie_basis, Religion_lk
+Rüdiger Trommler: Deutsch_lk, Erdkunde_basis, Erdkunde_lk, Kunst_basis, Englisch_lk, Englisch_basis, Physik_basis, Chemie_basis, Musik_lk, Sport_basis, Kunst_lk, Deutsch_basis, Politik_basis, Sport_lk, Mathe_lk, Chemie_lk, Geschichte_lk
+Richard Albers: Deutsch_lk, Erdkunde_basis, Informatik_lk, Englisch_lk, Philosophie_lk, Philosophie_lk, Musik_lk, Politik_basis, Sport_lk, Musik_basis, Musik_basis, Biologie_basis
+Aenne Junck Mba.: Deutsch_lk, Erdkunde_basis, Informatik_lk, Kunst_basis, Physik_basis, Philosophie_lk, Chemie_basis, Musik_lk, Sport_basis, Politik_basis, Mathe_basis, Sport_lk, Chemie_lk, Musik_basis, Geschichte_lk
+Trude Fechner B.Sc.: Geschichte_basis, Erdkunde_lk, Physik_basis, Philosophie_lk, Kunst_lk, Deutsch_basis, Politik_basis, Sport_lk, Mathe_lk, Biologie_basis, Religion_lk, Geschichte_lk
+Cecilia Wagenknecht: Geschichte_basis, Erdkunde_lk, Englisch_lk, Englisch_basis, Biologie_lk, Kunst_lk, Politik_basis, Mathe_basis, Mathe_basis, Mathe_lk, Religion_lk, Religion_lk
+Vesna Rogner: Informatik_lk, Erdkunde_lk, Kunst_basis, Englisch_lk, Biologie_lk, Musik_lk, Sport_basis, Kunst_lk, Politik_basis, Mathe_basis, Sport_lk, Mathe_lk, Religion_lk
+Francesca Klemm: Informatik_lk, Englisch_lk, Englisch_basis, Philosophie_lk, Chemie_basis, Musik_lk, Kunst_lk, Politik_basis, Mathe_basis, Sport_lk, Informatik_basis, Biologie_basis, Geschichte_lk
+(auf unumtu 22.04 getestet, real: 0,047s ,user: 0,038s, sys: 0,009s)
