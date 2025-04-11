@@ -2,7 +2,7 @@ import urllib3
 import json
 import argparse
 
-class WLEDController:
+class WLEDCALL:
     def __init__(self):
         self.url = f"http://192.168.2.115/json/state"
         self.http = urllib3.PoolManager()
@@ -34,7 +34,7 @@ def main():
     parser.add_argument("-d", "--debug", action="store_true", help="Enable debug output")
     args = parser.parse_args()
 
-    wled = WLEDController()
+    wled = WLEDCALL()
     wled.toggle(debug=args.debug)
 
 if __name__ == "__main__":
