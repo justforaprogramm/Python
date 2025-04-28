@@ -4,6 +4,7 @@ kurzer Text, weil am Handy.
 
 warum?:
 Ich habe von nem Freund paar LEDs zu nanoleafs bauen lassen, weil billiger.
+
 warum programm?:
 Auf nem ESP32 ist das Programm Wled installiert.
 normalerweise Steuer ich Wled über meine Led Software im PC.
