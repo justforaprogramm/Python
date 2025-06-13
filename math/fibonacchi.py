@@ -9,15 +9,12 @@ def main():
     except ValueError:
         print('what wasn\'t a number!')
         exit()
-    res = fib(n)
+    res:int = fib(n)
     print(f'your fib number is {res}!')
 
 @cache
 def fib(x:int) -> int:
-    
-    if x <= 1:
-        return x
-    return fib(x-1) + fib(x-2)
+    return (x if x < 2 else fib(x-1) + fib(x-2))
 
 if __name__ == '__main__':
     main()
