@@ -14,7 +14,7 @@ def main():
 
 @cache
 def pot(x:int) -> int:
-    return 2 **x
+    return 2 ** x
 
 if __name__ == '__main__':
     main()
