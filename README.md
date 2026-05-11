@@ -3,3 +3,9 @@ In this Repo i try to learn python!
 
 also some pip install programm's:   
 sys pandas tkinter pylint/ black
+
+```bash
+sudo devpod up .
+
+ssh python.devpod
+```
