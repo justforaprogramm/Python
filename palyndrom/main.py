@@ -4,7 +4,7 @@ Usage:
     python3 main.py <string>
     python3 main.py <file.json>
     python3 main.py --help
-    
+
     python3
     >>from main import Palindrome
     >>Palindrome.check(<string>)  # string out
@@ -19,18 +19,23 @@ Usage:
 
 # build CLI parsers and keep formatting in help/epilog text as-is
 from argparse import ArgumentParser, RawDescriptionHelpFormatter
+
 # serialize/deserialize JSON and catch parse errors
 from json import dumps, loads, JSONDecodeError
+
 # regex substitution, used to strip non-alphanumeric chars
 from re import sub as resub
+
 # exit the process with a status code
 from sys import exit as sysexit
+
 # object-oriented filesystem path handling
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
 # Core logic
 # ---------------------------------------------------------------------------
+
 
 class Palindrome:
     """Check whether a string is a palindrome or palindrome sentence."""
@@ -51,6 +56,7 @@ class Palindrome:
 # ---------------------------------------------------------------------------
 # Input helpers
 # ---------------------------------------------------------------------------
+
 
 def load_strings_from_json(path: Path) -> list[str]:
     """Load a JSON file that contains a string or list of strings."""
@@ -73,6 +79,7 @@ def load_strings_from_json(path: Path) -> list[str]:
 # Output helpers
 # ---------------------------------------------------------------------------
 
+
 def print_results(results: list[dict]) -> None:
     """Pretty-print results to stdout."""
     width = max(len(r["input"]) for r in results) + 2
@@ -84,6 +91,7 @@ def print_results(results: list[dict]) -> None:
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+
 
 def build_parser() -> ArgumentParser:
     """build and return the CLI argument parser with all arguments and help text"""
@@ -102,7 +110,7 @@ def build_parser() -> ArgumentParser:
         epilog=(
             "JSON format\n"
             "-----------\n"
-            "  A single string:      \"racecar\"\n"
+            '  A single string:      "racecar"\n'
             '  A list of strings:   ["racecar", "hello", "level"]\n\n'
             "Exit codes\n"
             "----------\n"
@@ -134,7 +142,7 @@ def build_parser() -> ArgumentParser:
 
 def main() -> None:
     """function to call only if the python file is called directly,
-       manages that the pretty looks get called corretly
+    manages that the pretty looks get called corretly
     """
     parser = build_parser()
     args = parser.parse_args()
