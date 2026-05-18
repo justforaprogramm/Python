@@ -2,6 +2,6 @@ FROM mcr.microsoft.com/devcontainers/python:3.14
 
 RUN mkdir -p /home/vscode/.ssh && chown -R vscode:vscode /home/vscode/.ssh
 
-RUN pip install --no-cache-dir pandas
+RUN pip install --no-cache-dir pandas numbase pyinstaller
 
 RUN apt-get update && apt-get install -y sshpass && rm -rf /var/lib/apt/lists/*
