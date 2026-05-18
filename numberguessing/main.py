@@ -2,20 +2,6 @@
 main.py — CLI-Einstiegspunkt für das Zahlenraten-Spiel.
 
 Unterstützte Zahlensysteme: Basis 2 (Binär) bis Basis 128.
-
-Zeichenreihenfolge im Zahlenraum:
-  0– 9  →  '0'–'9'
- 10–35  →  'a'–'z'  (Kleinbuchstaben)
- 36–61  →  'A'–'Z'  (Großbuchstaben)
- 62–127 →  Sonderzeichen
-
-Verwendung
-----------
-  python main.py                            # interaktives Menü
-  python main.py --preset binary
-  python main.py --preset hard
-  python main.py --base 16 --min 1 --max 255 --attempts 8
-  python main.py --base 36 --min 1 --max 1295
 """
 
 import argparse
@@ -23,12 +9,12 @@ import sys
 
 from config import GameConfig
 from game import NumberGuessingGame
-from numbase import ALPHABET, MAX_BASE, MIN_BASE, NumBase
-
+from numbase import MAX_BASE, MIN_BASE, NumBase
 
 # ------------------------------------------------------------------ #
 # CLI-Hilfsklasse                                                      #
 # ------------------------------------------------------------------ #
+
 
 class CLI:
     """Statische Sammlung von Terminal-Ein-/Ausgabe-Hilfsmethoden."""
@@ -45,6 +31,7 @@ class CLI:
 
     @staticmethod
     def print_banner() -> None:
+        """Gibt das ASCII-Art Banner des Spiels im Terminal aus."""
         print(CLI.BANNER)
 
     @staticmethod
@@ -63,6 +50,7 @@ class CLI:
     ) -> str:
         """
         Fordert eine Eingabe in der angegebenen Basis an.
+
         Wiederholt bei ungültigen Zeichen oder Bereichsüberschreitung.
 
         Args:
@@ -120,9 +108,14 @@ class CLI:
         print("  [9]  Eigene Basis / eigener Bereich")
         choice = input("\nEingabe (1–9): ").strip()
         mapping = {
-            "1": "easy", "2": "medium", "3": "hard",
-            "4": "binary", "5": "octal",
-            "6": "base36", "7": "base62", "8": "base128",
+            "1": "easy",
+            "2": "medium",
+            "3": "hard",
+            "4": "binary",
+            "5": "octal",
+            "6": "base36",
+            "7": "base62",
+            "8": "base128",
             "9": "custom",
         }
         return mapping.get(choice, "medium")
@@ -130,11 +123,13 @@ class CLI:
     @staticmethod
     def build_custom_config() -> GameConfig:
         """Interaktiver Assistent für eine eigene Konfiguration."""
-        print(f"\n── Eigene Konfiguration ──────────────────────────────")
+        print("\n── Eigene Konfiguration ──────────────────────────────")
         print(f"  Unterstützte Basen: {MIN_BASE}–{MAX_BASE}")
-        print(f"  Zeichenreihenfolge: 0–9, a–z, A–Z, Sonderzeichen")
+        print("  Zeichenreihenfolge: 0–9, a–z, A–Z, Sonderzeichen")
 
-        base = CLI.prompt_int_plain(f"  Basis [{MIN_BASE}–{MAX_BASE}, Standard 10]: ", 10)
+        base = CLI.prompt_int_plain(
+            f"  Basis [{MIN_BASE}–{MAX_BASE}, Standard 10]: ", 10
+        )
         try:
             NumBase.validate_base(base)
         except ValueError as exc:
@@ -162,14 +157,12 @@ class CLI:
             print("  Verwende Standardkonfiguration (Medium).\n")
             cfg = GameConfig.medium()
 
-        # Zeige die Grenzen in der gewählten Basis
-        print(
-            f"\n  Konfiguration aktiv: {cfg}"
-        )
+        print(f"\n  Konfiguration aktiv: {cfg}")
         return cfg
 
     @staticmethod
     def ask_play_again() -> bool:
+        """Fragt den Nutzer via Terminal, ob eine neue Runde starten soll."""
         return input("\nNochmal spielen? (j/n): ").strip().lower().startswith("j")
 
 
@@ -177,46 +170,60 @@ class CLI:
 # Argument-Parser                                                      #
 # ------------------------------------------------------------------ #
 
+
 def build_arg_parser() -> argparse.ArgumentParser:
+    """Erstellt den ArgumentParser für die CLI-Optionen."""
     parser = argparse.ArgumentParser(
         description="Zahlenraten CLI — Basis 2 bis 128",
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(
         "--preset",
-        choices=["easy", "medium", "hard", "binary", "octal",
-                 "base36", "base62", "base128"],
+        choices=[
+            "easy",
+            "medium",
+            "hard",
+            "binary",
+            "octal",
+            "base36",
+            "base62",
+            "base128",
+        ],
         help="Spiel direkt mit voreingestelltem Schwierigkeitsgrad starten.",
     )
     parser.add_argument(
-        "--base", type=int, dest="base",
+        "--base",
+        type=int,
+        dest="base",
         help=f"Zahlenbasis ({MIN_BASE}–{MAX_BASE}), Standard 10.",
     )
-    parser.add_argument("--min", type=int, dest="min_number",
-                        help="Untergrenze (Dezimal), Standard 1.")
-    parser.add_argument("--max", type=int, dest="max_number",
-                        help="Obergrenze (Dezimal), Standard 100.")
-    parser.add_argument("--attempts", type=int, dest="max_attempts",
-                        help="Maximale Versuche, Standard 10.")
-    parser.add_argument("--no-hints", action="store_true", dest="no_hints",
-                        help="Heiß/Kalt-Hinweise deaktivieren.")
+    parser.add_argument(
+        "--min", type=int, dest="min_number", help="Untergrenze (Dezimal), Standard 1."
+    )
+    parser.add_argument(
+        "--max", type=int, dest="max_number", help="Obergrenze (Dezimal), Standard 100."
+    )
+    parser.add_argument(
+        "--attempts",
+        type=int,
+        dest="max_attempts",
+        help="Maximale Versuche, Standard 10.",
+    )
+    parser.add_argument(
+        "--no-hints",
+        action="store_true",
+        dest="no_hints",
+        help="Heiß/Kalt-Hinweise deaktivieren.",
+    )
     return parser
 
 
 def config_from_args(args: argparse.Namespace) -> GameConfig | None:
     """Gibt eine GameConfig aus CLI-Argumenten zurück oder None."""
     if args.preset:
-        presets = {
-            "easy": GameConfig.easy,
-            "medium": GameConfig.medium,
-            "hard": GameConfig.hard,
-            "binary": GameConfig.binary,
-            "octal": GameConfig.octal,
-            "base36": GameConfig.base36,
-            "base62": GameConfig.base62,
-            "base128": GameConfig.base128,
-        }
-        return presets[args.preset]()
+        # Nutzt die Factory-Logik aus NumberGuessingGame, um Duplikate zu vermeiden
+        game_instance = NumberGuessingGame.from_preset(args.preset)
+        return game_instance.config
 
     if any([args.base, args.min_number, args.max_number, args.max_attempts]):
         try:
@@ -238,6 +245,7 @@ def config_from_args(args: argparse.Namespace) -> GameConfig | None:
 # Spielschleife                                                        #
 # ------------------------------------------------------------------ #
 
+
 def run_game(game: NumberGuessingGame) -> None:
     """Führt eine einzelne Spielrunde durch."""
     cfg = game.config
@@ -248,7 +256,7 @@ def run_game(game: NumberGuessingGame) -> None:
     print(f"  {cfg}")
     print(f"  Rate eine Zahl zwischen {lo_s!r} und {hi_s!r}.")
     print(f"  Eingabe in {GameConfig.base_label(cfg.base)}.")
-    print(f"  'q' zum Beenden.")
+    print("  'q' zum Beenden.")
     print(f"{'─' * 55}\n")
 
     CLI.print_alphabet_info(cfg.base)
@@ -257,9 +265,7 @@ def run_game(game: NumberGuessingGame) -> None:
     while not game.is_over:
         attempt_num = game.attempts_used + 1
         prompt = f"  Versuch #{attempt_num}: "
-        raw = CLI.prompt_base_string(
-            prompt, cfg.min_number, cfg.max_number, cfg.base
-        )
+        raw = CLI.prompt_base_string(prompt, cfg.min_number, cfg.max_number, cfg.base)
         try:
             feedback = game.make_guess(raw)
         except ValueError as exc:
@@ -275,6 +281,7 @@ def run_game(game: NumberGuessingGame) -> None:
 
 
 def main() -> None:
+    """Hauptprogramm-Steuerung (Initialisierung und Game-Loop)."""
     parser = build_arg_parser()
     args = parser.parse_args()
 
@@ -288,17 +295,7 @@ def main() -> None:
             if preset == "custom":
                 active_config = CLI.build_custom_config()
             else:
-                factory = {
-                    "easy": GameConfig.easy,
-                    "medium": GameConfig.medium,
-                    "hard": GameConfig.hard,
-                    "binary": GameConfig.binary,
-                    "octal": GameConfig.octal,
-                    "base36": GameConfig.base36,
-                    "base62": GameConfig.base62,
-                    "base128": GameConfig.base128,
-                }[preset]
-                active_config = factory()
+                active_config = NumberGuessingGame.from_preset(preset).config
         else:
             active_config = config
 
@@ -309,7 +306,7 @@ def main() -> None:
             print("\nBis zum nächsten Mal! 👋\n")
             break
 
-        config = None   # nach erster Runde immer neu abfragen
+        config = None
 
 
 if __name__ == "__main__":

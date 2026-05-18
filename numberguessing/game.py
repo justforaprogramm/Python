@@ -25,9 +25,7 @@ class NumberGuessingGame:
 
     def __init__(self, config: GameConfig) -> None:
         self.config = config
-        self._secret: int = self._generate_secret(
-            config.min_number, config.max_number
-        )
+        self._secret: int = self._generate_secret(config.min_number, config.max_number)
         self._attempts_left: int = config.max_attempts
         self._history: list[str] = []
         self._won: bool = False
@@ -38,16 +36,7 @@ class NumberGuessingGame:
 
     @staticmethod
     def _generate_secret(min_number: int, max_number: int) -> int:
-        """
-        Erzeugt einen zufälligen Integer in [min_number, max_number].
-
-        Args:
-            min_number: Untergrenze (inklusiv).
-            max_number: Obergrenze (inklusiv).
-
-        Returns:
-            Zufälliger Dezimalwert.
-        """
+        """Erzeugt einen zufälligen Integer in [min_number, max_number]."""
         return random.randint(min_number, max_number)
 
     @staticmethod
@@ -57,25 +46,12 @@ class NumberGuessingGame:
         show_hints: bool,
         base: int,
     ) -> str:
-        """
-        Erstellt eine Rückmeldung für den gegebenen Ratewert.
-
-        Args:
-            guess:      Eingegebener Wert (Dezimal intern).
-            secret:     Geheimzahl (Dezimal intern).
-            show_hints: Ob Temperatur-Hinweise angezeigt werden.
-            base:       Aktuelle Zahlenbasis (für Darstellung).
-
-        Returns:
-            Lesbare Feedback-Zeichenkette.
-        """
+        """Erstellt eine Rückmeldung für den gegebenen Ratewert."""
         if guess == secret:
             return "🎯 Richtig!"
 
         direction = "größer" if guess < secret else "kleiner"
         base_repr = NumBase.encode(guess, base)
-        base_secret = NumBase.encode(secret, base)
-        _ = base_secret  # nur intern; wird im Spielfluss nicht verraten
 
         base_info = f" (Basis {base}: {base_repr!r})"
         base_text = f"❌ Zu {'klein' if guess < secret else 'groß'}! Gehe {direction}.{base_info}"
@@ -83,7 +59,6 @@ class NumberGuessingGame:
         if not show_hints:
             return base_text
 
-        # Temperatur-Hinweis relativ zur Gesamtspanne
         diff = abs(secret - guess)
         if diff <= 2:
             temperature = "🔥 Sehr heiß"
@@ -100,15 +75,7 @@ class NumberGuessingGame:
 
     @staticmethod
     def _ordinal_de(n: int) -> str:
-        """
-        Gibt eine deutsche Ordinalzahl-Zeichenkette zurück.
-
-        Args:
-            n: Positive ganze Zahl.
-
-        Returns:
-            Z. B. '1.' für 1, '2.' für 2 usw.
-        """
+        """Gibt eine deutsche Ordinalzahl-Zeichenkette zurück."""
         return f"{n}."
 
     # ------------------------------------------------------------------ #
@@ -117,19 +84,7 @@ class NumberGuessingGame:
 
     @classmethod
     def from_preset(cls, preset: str) -> "NumberGuessingGame":
-        """
-        Erstellt ein Spiel aus einem benannten Schwierigkeitsgrad.
-
-        Args:
-            preset: Name ('easy', 'medium', 'hard', 'binary', 'octal',
-                    'base36', 'base62', 'base128').
-
-        Returns:
-            Fertig initialisiertes NumberGuessingGame.
-
-        Raises:
-            ValueError: Bei unbekanntem Preset-Namen.
-        """
+        """Erstellt ein Spiel aus einem benannten Schwierigkeitsgrad."""
         presets: dict[str, object] = {
             "easy": GameConfig.easy,
             "medium": GameConfig.medium,
@@ -143,8 +98,7 @@ class NumberGuessingGame:
         key = preset.strip().lower()
         if key not in presets:
             raise ValueError(
-                f"Unbekanntes Preset '{preset}'. "
-                f"Verfügbar: {', '.join(presets)}."
+                f"Unbekanntes Preset '{preset}'. Verfügbar: {', '.join(presets)}."
             )
         return cls(presets[key]())  # type: ignore[operator]
 
@@ -154,7 +108,7 @@ class NumberGuessingGame:
 
     @property
     def is_over(self) -> bool:
-        """True wenn das Spiel beendet ist (gewonnen oder keine Versuche mehr)."""
+        """True wenn das Spiel beendet ist."""
         return self._won or self._attempts_left == 0
 
     @property
@@ -168,33 +122,19 @@ class NumberGuessingGame:
         return self.config.max_attempts - self._attempts_left
 
     def make_guess(self, raw_input: str) -> str:
-        """
-        Verarbeitet eine Eingabe als String in der konfigurierten Basis
-        und gibt Rückmeldung zurück.
-
-        Args:
-            raw_input: Eingabe des Spielers (z. B. '1010' für Binär).
-
-        Returns:
-            Feedback-String.
-
-        Raises:
-            ValueError: Bei ungültigem Zeichen oder Bereichsüberschreitung.
-            RuntimeError: Wenn das Spiel bereits beendet ist.
-        """
+        """Verarbeitet eine Eingabe als String in der Basis."""
         if self.is_over:
             raise RuntimeError("Das Spiel ist bereits beendet.")
 
         cfg = self.config
 
-        # Dekodieren
         try:
             guess = NumBase.decode(raw_input.strip(), cfg.base)
         except ValueError as exc:
             raise ValueError(str(exc)) from exc
 
         lo, hi = cfg.min_number, cfg.max_number
-        if not (lo <= guess <= hi):
+        if not lo <= guess <= hi:
             lo_s = cfg.fmt(lo)
             hi_s = cfg.fmt(hi)
             raise ValueError(
