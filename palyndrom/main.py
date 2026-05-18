@@ -4,6 +4,17 @@ Usage:
     python3 main.py <string>
     python3 main.py <file.json>
     python3 main.py --help
+    
+    python3
+    >>from main import Palindrome
+    >>Palindrome.check(<string>)  # string out
+    >>Palindrome.report(<string>) # json like
+
+    pyinstaller --onefile main.py
+    cd dist
+    ./main <string>
+    ./main <file.json>
+    ./main --help
 """
 
 # build CLI parsers and keep formatting in help/epilog text as-is
