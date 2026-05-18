@@ -22,7 +22,7 @@ _SPECIALS = "".join(
     if chr(i) not in _DIGITS and chr(i) not in (" ", '"', "'", "\\")
 )
 
-ALPHABET = _DIGITS + _SPECIALS # pylint: disable=invalid-name
+ALPHABET = _DIGITS + _SPECIALS  # pylint: disable=invalid-name
 
 # Sicherheitscheck: Wir brauchen exakt 128 eindeutige Zeichen
 if len(ALPHABET) < 128:
@@ -33,7 +33,7 @@ if len(ALPHABET) < 128:
     )
     ALPHABET += FALLBACK
 
-ALPHABET = ALPHABET[:128] # pylint: disable=invalid-name
+ALPHABET = ALPHABET[:128]  # pylint: disable=invalid-name
 
 MIN_BASE = 2
 MAX_BASE = 128
