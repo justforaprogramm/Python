@@ -1,3 +1,6 @@
 */tmp.*
 */tmp-Out.*
 */hash.txt
+*.spec
+*/build/*
+*/dist/*
