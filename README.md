@@ -9,3 +9,12 @@ sudo devpod up .
 
 ssh python.devpod
 ```
+
+# programmieren 2
+
+wir machen ein zoo management-system zu max. 4 min alleine
+
+jeder soll seinen eigenen teil machen 
+
+tests nur beschreiben nicht implementieren.
+
