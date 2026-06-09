@@ -1,73 +1,73 @@
 """a function to compare which string is greater, by each element
 """
 
-def lexGreater(A:str, B:str) -> bool:
+def lex_greater(a:str, b:str) -> bool:
     """use builtin > to compare stings
 
-    Args:
-        A (str): origin string 
-        B (str): comperisan string
+    args:
+        a (str): origin string 
+        b (str): comperisan string
 
     Returns:
-        bool: A greater -> true else false
+        bool: a greater -> true else false
     """
-    return A > B
+    return a > b
 
-def lexGreaterRec(A:str, B:str) -> bool:
+def lex_greater_rec(a:str, b:str) -> bool:
     """use Recursive to compare stings
 
-    Args:
-        A (str): origin string 
-        B (str): comperisan string
+    args:
+        a (str): origin string 
+        b (str): comperisan string
 
     Returns:
-        bool: A greater -> true else false
+        bool: a greater -> true else false
     """
-    if A[0] > B[0]:
+    if a[0] > b[0]:
         return True
 
-    if A[0] < B[0]:
+    if a[0] < b[0]:
         return False
     try:
-        return lexGreaterRec(A[1:], B[1:])
+        return lex_greater_rec(a[1:], b[1:])
     except IndexError:
-        if len(A) > len(B):
-                return True
-        else:
-            return False
+        if len(a) > len(b):
+            return True
+        return False
 
-def lexGreaterIter(A: str, B: str) -> bool:
+def lex_greater_iter(a: str, b: str) -> bool:
     """use Iterative to compare stings
 
-    Args:
-        A (str): origin string 
-        B (str): comperisan string
+    args:
+        a (str): origin string 
+        b (str): comperisan string
 
     Returns:
-        bool: A greater -> true else false
+        bool: a greater -> true else false
     """
-    min_len = min(len(A), len(B))
-    
-    for i in range(min_len):
-        if A[i] > B[i]:
-            return True
-        if A[i] < B[i]:
-            return False
+    min_len = min(len(a), len(b))
 
-    return len(A) > len(B)
+    for i in range(min_len):
+        if a[i] > b[i]:
+            return True
+        return False
+
+    return len(a) > len(b)
 
 def main() -> None:
     """get user input and display output
     """
-    left:str = input("Enter String1: ") 
+    left:str = input("Enter String1: ")
     right:str = input("Enter String2: ")
 
-    print(f"Built-in: {lexGreater(left, right)} | Iterative: {lexGreaterIter(left, right)} | Recursive: {lexGreaterRec(left, right)}")
+    print(f"Built-in: {lex_greater(left, right)} \
+        | Iterative: {lex_greater_iter(left, right)} \
+        | Recursive: {lex_greater_rec(left, right)}")
 
 if __name__ == '__main__':
     main()
 
 # theoretical minima
-# left = input("Enter String1: ") 
+# left = input("Enter String1: ")
 # right = input("Enter String2: ")
 # print(left > right)
