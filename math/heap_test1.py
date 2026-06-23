@@ -1,8 +1,48 @@
 """playing with heap"""
-
+from pprint import pprint
 
 class Heap:
     """edit a heap"""
+
+    @staticmethod
+    def pprint(lst):
+        """Pretty-prints a list structurally as a binary heap tree.
+
+        Args:
+            lst (list): The list representation of the heap.
+
+        Returns:
+            None: Prints the tree layout directly to the console.
+        """
+        if not lst:
+            print("Empty Heap")
+            return
+
+        import math
+        
+        n = len(lst)
+        height = math.floor(math.log2(n)) + 1
+        max_width = (2 ** height) * 4  # Formatting spacing multiplier
+
+        print("\n--- Visual Heap Structure ---")
+        index = 0
+        for level in range(height):
+            # Calculate elements on the current level
+            level_elements = 2 ** level
+            # Form spaces around elements to center them
+            spacing = max_width // level_elements
+            
+            row_str = ""
+            for _ in range(level_elements):
+                if index < n:
+                    # Center the element string within its allocated spacing block
+                    row_str += f"{lst[index]}".center(spacing)
+                    index += 1
+                else:
+                    break
+            print(row_str)
+            print()  # Vertical spacing between levels
+        print("-----------------------------\n")
 
     @staticmethod
     def to_heap(lst):
@@ -95,7 +135,9 @@ def main():
 
     # Processing using the Heap class
     my_list = Heap.to_heap(my_list)
+    Heap.pprint(my_list)
     my_list = Heap.sort(my_list)
+    Heap.pprint(my_list)
     my_list = Heap.to_list(my_list)
 
     print(f"Sorted list is:\n\t{my_list}")
