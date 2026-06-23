@@ -44,7 +44,7 @@ class Heap:
             print()  # Vertical spacing between levels
         print("-----------------------------\n")
 
-    @staticmethod
+    @staticmethod2
     def to_heap(lst):
         """Converts a regular list into a Max-Heap.
 
