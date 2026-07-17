@@ -21,6 +21,8 @@ ssh -t python.devpod "bash --init-file <(echo '
         source .venv/bin/activate
         echo \"[DevPod] .venv erfolgreich aktiviert!\"
     else
-        echo \"[DevPod] Warnung: .venv Ordner wurde nicht gefunden!\"
+        python -m venv .venv --system-site-packages
+        source .venv/bin/activate
     fi
 ')"
+python -m venv .venv --system-site-packages
