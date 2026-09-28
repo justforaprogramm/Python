@@ -8,6 +8,7 @@ einer ``config.json``. CLI-Argumente überschreiben die Konfiguration.
 Usage:
     python3 wled_set.py
     python3 wled_set.py -c rot
+    python3 wled_set.py -c 0xFF0000
     python3 wled_set.py -c "255 0 0"
     python3 wled_set.py -i "192.168.2.125,192.168.2.169" -c blau
     python3 wled_set.py -i "192.168.2.125" -c grün -s
@@ -145,11 +146,15 @@ def save_config(
 def parse_color(color_arg: str) -> List[int]:
     """Wandelt eine Farbangabe in RGB-Werte um.
 
-    Zwei Formate werden unterstützt:
+    Drei Formate werden unterstützt:
 
     1. **RGB**: Drei durch Leerzeichen getrennte Integer (0–255),
        z. B. ``"255 0 0"``.
-    2. **Farbname**: Einer der vordefinierten Namen, z. B. ``"rot"``,
+    2. **Hex**: Sechsstelliger Hexwert mit optionalem ``#``- oder
+       ``0x``-Präfix, z. B. ``"#FF0000"``, ``"0xFF0000"`` oder
+       ``"FF0000"``. Auch die dreistellige Kurzform ``"#F00"`` wird
+       akzeptiert.
+    3. **Farbname**: Einer der vordefinierten Namen, z. B. ``"rot"``,
        ``"blau"`` (siehe ``COLOR_NAME_MAP``).
 
     Args:
@@ -159,11 +164,13 @@ def parse_color(color_arg: str) -> List[int]:
         RGB-Liste ``[R, G, B]`` mit Werten 0–255.
 
     Raises:
-        ValueError: Wenn die Angabe weder als RGB noch als Farbname
-            interpretiert werden kann.
+        ValueError: Wenn die Angabe weder als RGB, noch als Hexwert
+            oder Farbname interpretiert werden kann.
     """
+    color_arg = color_arg.strip()
+
     # Versuch 1: RGB-Zahlen (z. B. "255 0 0")
-    parts = color_arg.strip().split()
+    parts = color_arg.split()
     if len(parts) == 3:
         try:
             rgb = [int(p) for p in parts]
@@ -174,20 +181,37 @@ def parse_color(color_arg: str) -> List[int]:
                     )
             return rgb
         except ValueError:
-            pass  # → weitermachen mit Farbnamen
+            pass  # → weitermachen mit Hex
 
-    # Versuch 2: Farbname (switch/case-Äquivalent via dict)
-    color_lower = color_arg.strip().lower()
+    # Versuch 2: Hex-Wert (z. B. "#FF0000", "0xFF0000" oder "FF0000")
+    hex_arg = color_arg.lower()
+    for prefix in ("#", "0x"):
+        if hex_arg.startswith(prefix):
+            hex_arg = hex_arg[len(prefix):]
+            break
+
+    if len(hex_arg) in (3, 6) and all(c in "0123456789abcdef" for c in hex_arg):
+        if len(hex_arg) == 3:
+            # Kurzform (#F00) auf Langform (#FF0000) strecken
+            hex_arg = "".join(c * 2 for c in hex_arg)
+        return [
+            int(hex_arg[0:2], 16),
+            int(hex_arg[2:4], 16),
+            int(hex_arg[4:6], 16),
+        ]
+
+    # Versuch 3: Farbname (switch/case-Äquivalent via dict)
+    color_lower = color_arg.lower()
     if color_lower in COLOR_NAME_MAP:
         return COLOR_NAME_MAP[color_lower]
 
     # Nichts passt
     raise ValueError(
         f"Ungültige Farbangabe: '{color_arg}'. "
-        f"Erwartet: drei RGB-Werte (0–255) oder einen Farbnamen "
+        f"Erwartet: drei RGB-Werte (0–255), ein Hexwert "
+        f"(#RRGGBB, 0xRRGGBB oder RRGGBB) oder einen Farbnamen "
         f"({', '.join(VALID_COLOR_NAMES)})."
     )
-
 
 # ---------------------------------------------------------------------------
 # WLED-Controller (ein Gerät)
@@ -381,7 +405,8 @@ def build_argument_parser() -> argparse.ArgumentParser:
         type=str,
         default=None,
         help=(
-            "Farbe als RGB (z. B. \"255 0 0\") oder Farbname "
+            "Farbe als RGB (z. B. \"255 0 0\"), Hexwert "
+            "(z. B. \"#FF0000\", \"0xFF0000\" oder \"FF0000\") oder Farbname "
             f"({', '.join(VALID_COLOR_NAMES)}). "
             "Ohne Angabe wird default_color aus config.json verwendet."
         ),
