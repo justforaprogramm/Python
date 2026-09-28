@@ -2,3 +2,7 @@
 */tmp-Out.*
 */hash.txt
 *.log
+.spec
+*/build/*
+*/dist/*
+.env
