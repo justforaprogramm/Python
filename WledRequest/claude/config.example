@@ -1,0 +1,26 @@
+{
+    "default_color": "blau",
+    "default_effect": 0,
+    "interval": 10,
+    "devices": [
+        {
+            "ip": "192.168.2.169",
+            "color": "rot",
+            "effect": 9
+        },
+        {
+            "ip": "192.168.2.125",
+            "segments": [
+                {"start": 0,  "stop": 30, "color": "blau", "effect": 0},
+                {"start": 30, "stop": 60, "effect": 9}
+            ]
+        },
+        {
+            "ip": "192.168.2.130",
+            "scenes": [
+                {"effect": 0, "color": "gelb"},
+                {"effect": 9, "brightness": 180}
+            ]
+        }
+    ]
+}
