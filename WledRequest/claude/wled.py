@@ -14,13 +14,13 @@ Alles Detaillierte steht in der ``config.json``. CLI-Argumente ``-c``/``-e``
 setzen dagegen schnell **alle** Geräte einheitlich.
 
 Usage:
-    python3 wled_set.py                      # config.json anwenden
-    python3 wled_set.py --loop               # Szenen durchschalten
-    python3 wled_set.py -e 9                 # alle Geräte: Rainbow
-    python3 wled_set.py -c rot -e 0 -b 128   # alle Geräte: rot, statisch
-    python3 wled_set.py -i 192.168.2.125 -e 2
-    python3 wled_set.py -c blau -e 0 -s      # einheitlich anwenden + speichern
-    python3 wled_set.py --list-effects
+    python3 wled.py                      # config.json anwenden
+    python3 wled.py --loop               # Szenen durchschalten
+    python3 wled.py -e 9                 # alle Geräte: Rainbow
+    python3 wled.py -c rot -e 0 -b 128   # alle Geräte: rot, statisch
+    python3 wled.py -i 192.168.2.125 -e 2
+    python3 wled.py -c blau -e 0 -s      # einheitlich anwenden + speichern
+    python3 wled.py --list-effects
 """
 
 import argparse
@@ -44,7 +44,7 @@ type Config = dict[str, Any]
 # ---------------------------------------------------------------------------
 
 CONFIG_FILE: Final[Path] = Path(__file__).parent / "config.json"
-LOG_FILE: Final[Path] = Path(__file__).parent / "wled_set.log"
+LOG_FILE: Final[Path] = Path(__file__).parent / "wled.log"
 
 #: Farbnamen → RGB.
 COLOR_NAME_MAP: Final[dict[str, RGB]] = {
@@ -865,7 +865,7 @@ def build_argument_parser() -> argparse.ArgumentParser:
         argparse.ArgumentParser: Fertig konfigurierter Parser.
     """
     parser = argparse.ArgumentParser(
-        prog="wled_set.py",
+        prog="wled.py",
         description=(
             "Steuert WLED-Geräte mit Farbe, Effekt, Segmenten und "
             "Szenen-Wechsel. Ohne Argumente wird die config.json angewendet; "
@@ -876,12 +876,12 @@ def build_argument_parser() -> argparse.ArgumentParser:
             f"{build_effect_help()}\n\n"
             f"{CONFIG_HELP}\n\n"
             "Beispiele:\n"
-            "  python3 wled_set.py\n"
-            "  python3 wled_set.py --loop\n"
-            "  python3 wled_set.py -e 9\n"
-            '  python3 wled_set.py -c "255 120 0" -e 2 -b 128\n'
-            "  python3 wled_set.py -i 192.168.2.125 -c blau -s\n"
-            "  python3 wled_set.py --list-effects"
+            "  python3 wled.py\n"
+            "  python3 wled.py --loop\n"
+            "  python3 wled.py -e 9\n"
+            '  python3 wled.py -c "255 120 0" -e 2 -b 128\n'
+            "  python3 wled.py -i 192.168.2.125 -c blau -s\n"
+            "  python3 wled.py --list-effects"
         ),
     )
 
