@@ -1,4 +1,10 @@
-# Wled
+# WLED request
+
+## Overview
+
+Python scripts that control WLED devices (ESP32 LED controllers) over their HTTP JSON API: toggle power, set a color, and two config-driven setters for several devices (`claude/` and `deepseek/`).
+
+## Original notes (German)
 
 kurzer Text, weil am Handy.
 

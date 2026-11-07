@@ -1,4 +1,10 @@
-# USECASE
+# PDF cracker
+
+## Overview
+
+Scripts to encrypt a PDF (`PDFEncrypter.py`) and to brute-force the password of a PDF you own (`PDFCracker.py`). Only use it on your own files.
+
+## Original notes
 
 this is my personal PDF Cracker.
 I had a file encrypted which i forgot the Password.

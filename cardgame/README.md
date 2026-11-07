@@ -1,5 +1,11 @@
 # 🃏 UNO – Das Kartenspiel
 
+## Overview
+
+UNO card game for the terminal, written in Python 3.10+ (2 to 8 players, colored ANSI output, all special cards). Start it with `python3 main.py`.
+
+## Original documentation (German)
+
 Ein vollständiges UNO-Spiel für das Terminal, geschrieben in Python 3.10+.  
 Unterstützt 2–8 Spieler, farbige ANSI-Ausgabe und alle klassischen Sonderkarten.
 
