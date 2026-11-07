@@ -1,0 +1,3 @@
+#!/bin/sh
+# Keep the folder overviews in README.md in sync with the folder READMEs.
+python3 tools/build_readme.py && git add README.md

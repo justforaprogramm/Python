@@ -1,8 +1,24 @@
-*/tmp.*
-*/tmp-Out.*
-*/hash.txt
-*.log
-.spec
-*/build/*
-*/dist/*
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Build output (PyInstaller etc.)
+build/
+dist/
+
+# Secrets and local environment
 .env
+
+# Temporary and generated files
+**/tmp.*
+**/tmp-Out.*
+**/hash.txt
+*.log
+
+# IDE and OS files
+.idea/
+.DS_Store
