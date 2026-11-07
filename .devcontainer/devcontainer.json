@@ -10,6 +10,7 @@
       ]
     }
   },
+  "postCreateCommand": "git config core.hooksPath .githooks",
   "remoteUser": "vscode",
   "mounts": [
   "source=${localEnv:HOME}/.ssh/known_hosts,target=/home/vscode/.ssh/known_hosts,type=bind,readonly"
